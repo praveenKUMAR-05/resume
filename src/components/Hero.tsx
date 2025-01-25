@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="mb-8">
           <img
-            src="img.png"
+            src="\img.png"
             alt="Praveen Kumar Mohan"
             className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-full mx-auto mb-8 object-cover border-4 border-[#4A90E2]"
             loading="eager"
