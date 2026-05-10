@@ -90,7 +90,7 @@ const Contact = () => {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/praveen-kumar-m-083896281"
+                  href="https://www.linkedin.com/in/praveen-kumar-mohan/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-[#4A90E2]"

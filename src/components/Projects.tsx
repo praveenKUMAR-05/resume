@@ -39,6 +39,30 @@ const Projects = () => {
       homepage: '', // Add live demo link if available
       topics: ['Tinkercad', 'Simulation'],
     },
+    {
+      id: 104,
+      name: 'Bank Marketing ML Prediction',
+      description: 'ML classification model (Logistic Regression, Random Forest, XGBoost) to predict customer subscription likelihood for bank campaigns.',
+      html_url: '',
+      homepage: '',
+      topics: ['Machine Learning', 'Python'],
+    },
+    {
+      id: 105,
+      name: 'Skill Tracker Web App',
+      description: 'Built a simple Skill Tracker web application using HTML, CSS, and JavaScript with Node.js backend logic and MongoDB.',
+      html_url: '',
+      homepage: '',
+      topics: ['Node.js', 'MongoDB', 'Web Dev'],
+    },
+    {
+      id: 106,
+      name: 'Waste Segregation & Monitoring',
+      description: 'Smart waste system to separate metal and dry waste using sensors with a web monitoring dashboard.',
+      html_url: '',
+      homepage: '',
+      topics: ['IoT', 'Hardware', 'Sensors'],
+    },
   ];
 
   useEffect(() => {

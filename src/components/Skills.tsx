@@ -22,7 +22,8 @@ const Skills = () => {
       skills: [
         { name: "Python", level: 70 },
         { name: "C++", level: 60 },
-        { name: "Java", level: 70 }
+        { name: "Java", level: 70 },
+        { name: "HTML/CSS/JS", level: 65 }
       ]
     },
     {
@@ -30,7 +31,9 @@ const Skills = () => {
       skills: [
         { name: "Arduino", level: 50 },
         { name: "Raspberry Pi", level: 60 },
-        { name: "Git", level: 60 }
+        { name: "Git", level: 60 },
+        { name: "Android Studio", level: 55 },
+        { name: "Firebase", level: 50 }
       ]
     },
     {
@@ -38,7 +41,9 @@ const Skills = () => {
       skills: [
         { name: "IoT", level: 60 },
         { name: "Embedded Systems", level: 50 },
-        { name: "PCB Design", level: 70 }
+        { name: "PCB Design", level: 70 },
+        { name: "Machine Learning", level: 65 },
+        { name: "MERN Stack", level: 55 }
       ]
     }
   ];

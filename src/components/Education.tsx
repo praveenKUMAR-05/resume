@@ -24,23 +24,13 @@ const Education = () => {
       year: "2023 - 2027",
       title: "B.E. in Electronics and Communication Engineering",
       description: "Sri Krishna College of Technology, Coimbatore"
-    },
-    {
-      year: "2023",
-      title: "Participated in Hackathon",
-      description: " participated in college technical symposium for autonomous vechicle"
-    },
-    {
-      year: "2024",
-      title: "AIML Internship",
-      description: "Completed internship focusing on Machine learning with a small project on text emotion detector"
     }
   ];
 
   return (
     <section id="education" className="py-20 bg-[#121212] text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Education & Achievements</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
         <div className="relative">
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#4A90E2]" />
           {milestones.map((milestone, index) => (
