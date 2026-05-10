@@ -20,25 +20,28 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Python", level: 70 },
-        { name: "C++", level: 60 },
-        { name: "Java", level: 70 }
+        { name: "Python", level: 80 },
+        { name: "Java", level: 75 },
+        { name: "C++", level: 70 },
+        { name: "C", level: 70 }
       ]
     },
     {
-      title: "Tools & Platforms",
+      title: "Tools & Frameworks",
       skills: [
-        { name: "Arduino", level: 50 },
-        { name: "Raspberry Pi", level: 60 },
-        { name: "Git", level: 60 }
+        { name: "GitHub", level: 85 },
+        { name: "VS Code", level: 90 },
+        { name: "TensorFlow", level: 65 },
+        { name: "Jupyter", level: 80 },
+        { name: "Google Colab", level: 85 }
       ]
     },
     {
-      title: "Technical Skills",
+      title: "Languages",
       skills: [
-        { name: "IoT", level: 60 },
-        { name: "Embedded Systems", level: 50 },
-        { name: "PCB Design", level: 70 }
+        { name: "Tamil", level: 100 },
+        { name: "English", level: 90 },
+        { name: "Hindi", level: 75 }
       ]
     }
   ];

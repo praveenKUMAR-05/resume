@@ -16,31 +16,41 @@ const TimelineItem = ({ year, title, description, isLeft = true }) => (
 const Education = () => {
   const milestones = [
     {
-      year: "2021 - 2022",
-      title: "12 CBSE HSC",
-      description: "Kendriya Vidyalaya Ashok nagar,Chennai"
+      year: "May 2025",
+      title: "AI Integration in Web and Mobile Development Intern",
+      description: "National Small Industries Corporation (NSIC). Learned basics of AI Integration concepts in web/mobile app workflows."
     },
     {
-      year: "2023 - 2027",
+      year: "Dec 2024 - Jan 2025",
+      title: "AIML Intern",
+      description: "CodeBind Technologies. Gained foundational understanding of AI/ML algorithms and built introductory ML projects."
+    },
+    {
+      year: "Aug 2023 - Present",
       title: "B.E. in Electronics and Communication Engineering",
-      description: "Sri Krishna College of Technology, Coimbatore"
+      description: "Sri Krishna College of Engineering and Technology, Coimbatore. CGPA: 8.34"
     },
     {
-      year: "2023",
-      title: "Participated in Hackathon",
-      description: " participated in college technical symposium for autonomous vechicle"
+      year: "2023 - 2024",
+      title: "Awards & Honors",
+      description: "Hackathon Runner-up (University of Hyderabad), App Development (IIT Palakkad), Google Cloud Agentic AI Day, 5-Day AI Agents Intensive Course with Google."
     },
     {
-      year: "2024",
-      title: "AIML Internship",
-      description: "Completed internship focusing on Machine learning with a small project on text emotion detector"
+      year: "Apr 2022 - Mar 2023",
+      title: "12th CBSE HSC",
+      description: "Kendriya Vidyalaya, Chennai. Percentage: 85.2%"
+    },
+    {
+      year: "Apr 2020 - Mar 2021",
+      title: "10th CBSE",
+      description: "Kendriya Vidyalaya, Chennai. Percentage: 77%"
     }
   ];
 
   return (
     <section id="education" className="py-20 bg-[#121212] text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Education & Achievements</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Experience, Education & Awards</h2>
         <div className="relative">
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#4A90E2]" />
           {milestones.map((milestone, index) => (

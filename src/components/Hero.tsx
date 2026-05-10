@@ -16,16 +16,9 @@ const Hero = () => {
             Hi, I'm Praveen Kumar Mohan
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up">
-            Electronics and Communication Engineer | IoT & Embedded Systems Beginner
+            Electronics and Communication Engineer | IoT & AIML Integration
           </p><br></br>
-          <p>Currently enhancing skills in Embedded Systems,
-            IoT, Signals and Systems, and Verilog coding at a
-            basic level. Possess foundational experience in
-            these areas with a proven ability to adapt and learn
-            quickly in dynamic environments. Demonstrated
-            eagerness to grow and contribute effectively
-            through continuous learning and practical
-            application.</p>
+          <p className="max-w-3xl mx-auto">I am an Electronics and Communication Engineer who has a passion for working with IOT and AIML integration and curious to learn about AI by working on it. I challenge myself to face real-world problems and provide solutions in a short period of time using AI.</p>
 
         </div>
 
