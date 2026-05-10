@@ -17,27 +17,27 @@ const Projects = () => {
   const customProjects: Repository[] = [
     {
       id: 101,
-      name: 'Optimizing Customer Response Prediction in Bank Marketing',
-      description: 'Built a machine learning classification model to predict customer subscription likelihood. Achieved Runner-Up position in a Machine Learning Hackathon at University of Hyderabad.',
+      name: 'Grocery Management System',
+      description: 'Built using Python and MySQL.',
       html_url: '', // Add GitHub URL if available
       homepage: '', // Add live demo link if available
-      topics: ['Machine Learning', 'Python', 'XGBoost', 'Logistic Regression'],
+      topics: ['Python', 'MySQL'],
     },
     {
       id: 102,
-      name: 'Skill Tracker',
-      description: 'Built a simple Skill Tracker web application using HTML, CSS, and JavaScript. Developed basic backend logic using Node.js and managed skill data using MongoDB.',
+      name: 'LED Detection System',
+      description: 'Developed with Arduino for monitoring.',
       html_url: '', // Add GitHub URL if available
       homepage: '', // Add live demo link if available
-      topics: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB'],
+      topics: ['Arduino', 'Hardware'],
     },
     {
       id: 103,
-      name: 'Waste Segregation System & Web Monitoring',
-      description: 'Built a smart waste system to separate metal and dry waste using sensors. Used IR and metal sensors for automatic waste detection, and monitored waste data using a web dashboard.',
+      name: 'Gas Sensor Simulation',
+      description: 'Simulated on Tinkercad for range detection.',
       html_url: '', // Add GitHub URL if available
       homepage: '', // Add live demo link if available
-      topics: ['Sensors', 'IoT', 'Web Dashboard'],
+      topics: ['Tinkercad', 'Simulation'],
     },
   ];
 

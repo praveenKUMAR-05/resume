@@ -6,7 +6,7 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
-    const sections = ['home', 'skills', 'projects', 'education', 'contact'];
+    const sections = ['home', 'skills', 'projects', 'education', 'activity', 'contact'];
     const current = sections.find(section => {
       const element = document.getElementById(section);
       if (element) {
@@ -38,7 +38,7 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {['Home', 'Skills', 'Projects', 'Education', 'Contact'].map((item) => (
+          {['Home', 'Skills', 'Projects', 'Education', 'Activity', 'Contact'].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase())}
@@ -64,7 +64,7 @@ const Header = () => {
         {isOpen && (
           <div className="absolute top-[60px] left-0 right-0 bg-[#121212] md:hidden">
             <div className="flex flex-col p-4 space-y-4">
-              {['Home', 'Skills', 'Projects', 'Education', 'Contact'].map((item) => (
+              {['Home', 'Skills', 'Projects', 'Education', 'Activity', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollTo(item.toLowerCase())}
