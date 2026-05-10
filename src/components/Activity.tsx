@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, Briefcase, Calendar, Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Activity = () => {
   const experiences = [
@@ -52,50 +53,99 @@ const Activity = () => {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
-    <section id="activity" className="py-20 bg-[#121212] text-white">
+    <section id="activity" className="py-20 relative z-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Experience & Activities</h2>
+        <motion.h2 
+          className="text-3xl font-bold text-center mb-12 text-gradient"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          Experience & Activities
+        </motion.h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Experience Section */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-[#4A90E2]">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-primary">
               <Briefcase size={24} /> Experience
             </h3>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
-                <div key={index} className="bg-[#1A1A1A] p-6 rounded-lg border-l-4 border-[#4A90E2]">
-                  <h4 className="text-xl font-bold">{exp.title}</h4>
-                  <p className="text-[#4A90E2] font-medium">{exp.company}</p>
-                  <p className="text-sm text-gray-400 mb-3 flex items-center gap-1">
+                <motion.div 
+                  key={index} 
+                  variants={itemVariants}
+                  whileHover={{ x: 5 }}
+                  className="glass-card p-6 rounded-2xl border-l-4 border-l-primary hover:border-l-secondary transition-all"
+                >
+                  <h4 className="text-xl font-bold text-white">{exp.title}</h4>
+                  <p className="text-primary font-medium">{exp.company}</p>
+                  <p className="text-sm text-gray-400 mb-3 flex items-center gap-1 mt-1">
                     <Calendar size={14} /> {exp.date}
                   </p>
-                  <p className="text-gray-300">{exp.description}</p>
-                </div>
+                  <p className="text-gray-300 leading-relaxed">{exp.description}</p>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Activities Section */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-[#4A90E2]">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-primary">
               <Star size={24} /> Honors & Activities
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {activities.map((act, index) => (
-                <div key={index} className="bg-[#1A1A1A] p-5 rounded-lg hover:bg-[#252525] transition-colors">
+                <motion.div 
+                  key={index} 
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02 }}
+                  className="glass-card p-5 rounded-2xl hover:border-primary/50 transition-colors"
+                >
                   <div className="flex items-start gap-3">
-                    <Award className="text-[#4A90E2] shrink-0 mt-1" size={20} />
+                    <div className="p-2 bg-primary/10 rounded-lg shrink-0">
+                      <Award className="text-primary" size={20} />
+                    </div>
                     <div>
-                      <h4 className="font-bold text-lg leading-tight mb-2">{act.title}</h4>
-                      <p className="text-sm text-gray-400">{act.description}</p>
+                      <h4 className="font-bold text-base leading-tight mb-2 text-white">{act.title}</h4>
+                      <p className="text-xs text-gray-400 leading-relaxed">{act.description}</p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -32,20 +32,23 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-[60px] bg-[#121212] text-white z-50 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 h-[60px] glass z-50 transition-all duration-300">
       <nav className="container mx-auto px-4 h-full flex items-center justify-between">
-        <h1 className="text-xl font-bold">PraveenKumarMohan</h1>
+        <h1 className="text-xl font-bold text-gradient">PraveenKumarMohan</h1>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-2">
           {['Home', 'Skills', 'Projects', 'Education', 'Activity', 'Contact'].map((item) => (
             <button
               key={item}
               onClick={() => scrollTo(item.toLowerCase())}
-              className={`hover:text-[#4A90E2] transition-colors ${
-                activeSection === item.toLowerCase() ? 'text-[#4A90E2]' : ''
+              className={`relative px-4 py-2 rounded-full transition-colors ${
+                activeSection === item.toLowerCase() ? 'text-primary' : 'hover:text-primary'
               }`}
             >
+              {activeSection === item.toLowerCase() && (
+                <span className="absolute inset-0 bg-primary/10 rounded-full -z-10" />
+              )}
               {item}
             </button>
           ))}
@@ -53,7 +56,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white hover:text-primary transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -62,14 +65,14 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-[60px] left-0 right-0 bg-[#121212] md:hidden">
-            <div className="flex flex-col p-4 space-y-4">
+          <div className="absolute top-[60px] left-0 right-0 glass md:hidden border-t border-white/10">
+            <div className="flex flex-col p-4 space-y-2">
               {['Home', 'Skills', 'Projects', 'Education', 'Activity', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollTo(item.toLowerCase())}
-                  className={`text-left hover:text-[#4A90E2] transition-colors ${
-                    activeSection === item.toLowerCase() ? 'text-[#4A90E2]' : ''
+                  className={`text-left px-4 py-3 rounded-lg transition-colors ${
+                    activeSection === item.toLowerCase() ? 'bg-primary/10 text-primary' : 'hover:bg-white/5 hover:text-primary'
                   }`}
                 >
                   {item}
