@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="text-center md:text-left mb-4 md:mb-0">
             <p>&copy; {new Date().getFullYear()} Praveen Kumar Mohan. All rights reserved.</p>
           </div>
-          
+
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/praveenKUMAR-05"
@@ -34,7 +34,7 @@ const Footer = () => {
               <Linkedin size={24} />
             </a>
           </div>
-          
+
           <button
             onClick={scrollToTop}
             className="fixed bottom-8 right-8 p-2 bg-[#4A90E2] rounded-full shadow-lg hover:bg-[#357ABD] transition-colors"

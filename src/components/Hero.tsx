@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 const Hero = () => {
   return (
